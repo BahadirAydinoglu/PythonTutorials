@@ -1,7 +1,4 @@
 
-from tokenize import Number
-
-
 Ogrenciler = {}
 
 Number  = input("Öğrenci No: ")

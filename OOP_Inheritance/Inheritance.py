@@ -1,3 +1,4 @@
+
 #Inheritance (Kalıtım): Miras Alma
 
 #Person -> name,surname,age, eat(),run(), drink() attribute ve metodlarına sahip
@@ -6,8 +7,7 @@
 class Person():
     def __init__(this,fname,fsurname):
         this.name = fname
-        this.surname = fsurname
-        
+        this.surname = fsurname        
     
     def eat(this):
         pass
@@ -28,6 +28,7 @@ class Student(Person):
     def me(this):
         print(F"Benim Adım {this.name} Soyadım {this.surname}")    
 
+
 class Teacher(Person):
     def __init(this,fname,fsurname,fbranch):
         super().__init__(fname,fsurname)
@@ -35,9 +36,12 @@ class Teacher(Person):
 
 p1 = Person("Bahadir","Aydinoglu")
 s1 = Student("Ruya","Aydinoglu",1226)
-t1 = Teacher("Irem","Gozukan","Turkce")
+
+t1 = Teacher("Irem","Gozukan")
 
 p1.me()
 s1.me()
 
 print(s1.studentnumber)
+t1.branch = "TURKCE"
+print(t1.branch,t1.name,t1.surname)
